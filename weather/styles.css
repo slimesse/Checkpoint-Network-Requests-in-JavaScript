@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./icons/sxsx.jpg);
+}
+
+#weather-app {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+    color: #333;
+}
+
+.search-container {
+    margin-bottom: 50px;
+}
+
+#city {
+    padding: 8px;
+    width: 70%;
+    font-size: 16px;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+#search-button {
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #018132;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    margin-top: 50px
+}
+
+#search-button:hover {
+    background-color: #1eff00;
+}
+
+#weather-info {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+#location::before {
+    content: "\f08d"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+
+#temperature::before {
+    content: "\f76b"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+
+#description::before {
+    content: "\f0c2";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+#humidity::before {
+    content: "\f043"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+#wind-speed::before {
+    content: "\f72e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+
+#error-message {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+@media (max-width: 600px) {
+    #weather-app {
+        width: 90%;
+    }
+}
